@@ -1,0 +1,11 @@
+python run_ner.py \
+  --model_name_or_path $2 \
+  --train_file $1.json \
+  --output_dir models/ptr-large-c4-sft-$1\
+  --per_device_train_batch_size 16\
+  --gradient_accumulation_steps 4\
+  --num_train_epochs 100\
+  --save_steps 1000\
+  --learning_rate 0.00001\
+  --do_train \
+  --overwrite_output_dir 
