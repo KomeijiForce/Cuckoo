@@ -6,7 +6,7 @@ Cuckoo is a small (300M) information extraction (IE) model that imitates the nex
 
 Currently, we open-source checkpoints of Cuckoos that are pre-trained on:
 
-1) 100M next tokens extraction (NTE) instances converted from C4. (Cuckoo-C4 🐦)
+1) 100M next tokens extraction (NTE) instances converted from C4. ([Cuckoo-C4](https://huggingface.co/KomeijiForce/Cuckoo-C4) 🐦)
 
 2) Cuckoo-C4 + 2.6M next token extraction (NTE) instances converted from a supervised fine-tuning dataset, TuluV3. (Cuckoo-C4-Instruct 🐦)
 
