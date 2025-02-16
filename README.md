@@ -152,3 +152,23 @@ fire ['red']
 night []
 ```
 which shows Cuckoo is not extracting any plausible spans but has the knowledge to understand the context.
+
+## Fly your own Cuckoo 🪽
+
+We include the script to transform texts to NTE instances in the file ```nte_data_collection.py```, which takes C4 as an example, the converted results can be checked in ```cuckoo.c4.example.json```. The script is designed to be easily adapted to other resources like entity, query, and questions and you can modify your own data to NTE to fly your own Cuckoo! Run the ```run_cuckoo.sh``` script to try an example pre-training.
+
+```bash
+python run_ner.py \
+  --model_name_or_path roberta-large \
+  --train_file cuckoo.c4.example.json \
+  --output_dir models/cuckoo-c4-example \
+  --per_device_train_batch_size 4\
+  --gradient_accumulation_steps 16\
+  --num_train_epochs 1\
+  --save_steps 1000\
+  --learning_rate 0.00001\
+  --do_train \
+  --overwrite_output_dir
+```
+
+You will get an example Cuckoo model in ```models/cuckoo-c4-example```, it might not perform well if you pre-train with too little data.
