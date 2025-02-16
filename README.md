@@ -17,9 +17,9 @@ Currently, we open-source checkpoints of Cuckoos that are pre-trained on:
 
 3) Cuckoo-C4-Instruct + MultiNERD, MetaIE, NuNER, MRQA (excluding SQuAD, DROP). ([Cuckoo-C4-Rainbow](https://huggingface.co/KomeijiForce/Cuckoo-C4-Rainbow) 🌈🐦🛠️)
 
-4) Cuckoo-C4-Rainbow + Multiple NER Datasets, WizardLM Dataset, Multiple Choice QA Datasets, MMLU, SQuAD, DROP, MNLI, SNLI. (Cuckoo-C4-Super-Rainbow 🦸🌈🐦🛠️)
+4) Cuckoo-C4-Rainbow + Multiple NER Datasets, WizardLM Dataset, Multiple Choice QA Datasets, MMLU, SQuAD, DROP, MNLI, SNLI. ([Cuckoo-C4-Super-Rainbow](https://huggingface.co/KomeijiForce/Cuckoo-C4-Super-Rainbow) 🦸🌈🐦🛠️)
 
-## Performance Demonstration
+## Performance Demonstration 🚀
 
 Begin your journey with Cuckoo to experience unimaginable adaption efficiency to all kinds of IE tasks!
 
@@ -36,4 +36,6 @@ Begin your journey with Cuckoo to experience unimaginable adaption efficiency to
 | └─ Only Post-train   | 72.80     | 56.10     | 66.02          | 67.10     | 65.51 | 68.66     | 69.75 | 69.21 | 77.05 | 62.39    | 54.80 | 64.75 |
 | Rainbow Cuckoo 🌈🐦🛠️  | 79.94     | 58.39     | 70.30          | 67.00     | **68.91** | 70.47     | 76.05 | **73.26** | 86.57 | 69.41    | 64.64 | **73.54** |
 
+## Quick Experience with Cuckoo in Next Tokens Extraction ⚡
 
+We recommend using the strongest Super Rainbow Cuckoo 🦸🌈🐦🛠️ for zero-shot inference
