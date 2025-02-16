@@ -38,7 +38,7 @@ Begin your journey with Cuckoo to experience unimaginable adaption efficiency to
 
 ## Quick Experience with Cuckoo in Next Tokens Extraction ⚡
 
-We recommend using the strongest Super Rainbow Cuckoo 🦸🌈🐦🛠️ for zero-shot extraction.
+We recommend using the strongest Super Rainbow Cuckoo 🦸🌈🐦🛠️ for zero-shot extraction. You can directly run the cases below in ```case_next_tokens_extraction.py```.
 
 1️⃣ First load the model and the tokenizers
 
