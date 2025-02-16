@@ -1,0 +1,11 @@
+python run_ner.py \
+  --model_name_or_path roberta-large \
+  --train_file cuckoo.c4.example.json \
+  --output_dir models/cuckoo-c4-example \
+  --per_device_train_batch_size 4\
+  --gradient_accumulation_steps 16\
+  --num_train_epochs 1\
+  --save_steps 1000\
+  --learning_rate 0.00001\
+  --do_train \
+  --overwrite_output_dir
