@@ -1,10 +1,10 @@
 # Cuckoo 🐦
 
-Cuckoo is a small (300M) information extraction (IE) model that imitates the next token prediction paradigm of large language models. Instead of retrieving from the vocabulary, Cuckoo predicts the next tokens by tagging them in the given input context as shown below:
+Cuckoo is a small (0.3B) information extraction (IE) model that imitates the next token prediction paradigm of large language models (LLMs). Instead of retrieving from the vocabulary, Cuckoo predicts the next tokens by tagging them in the given input context as shown below:
 
 ![cuckoo](https://github.com/user-attachments/assets/d000f275-82a7-4939-aca8-341c61a774dc)
 
-Cuckoo is substantially different from previous IE pre-training because it can use any text resource to enhance itself, especially by taking a free ride on data curated for LLMs!
+Cuckoo is substantially different from previous IE pre-training because it can use any text resource to enhance itself, especially by taking a free ride on data curated for LLMs! You can get significantly better IE performance than 8B Llama-3-Instruct when they are both fine-tuned on a few shots and the efficiency will be 20X higher, cheers!🎉🎉🎉
 
 ![image](https://github.com/user-attachments/assets/f4106f82-6c07-4961-a654-eca7d69428a6)
 
