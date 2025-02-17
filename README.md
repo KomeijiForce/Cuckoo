@@ -157,6 +157,31 @@ which shows Cuckoo is not extracting any plausible spans but has the knowledge t
 
 Cuckoo 🐦 is an expert in few-shot adaptation to your own tasks, taking CoNLL2003 as an example, run ```bash run_downstream.sh conll2003.5shot KomeijiForce/Cuckoo-C4-Rainbow```, you will get a fine-tuned model in ```models/cuckoo-conll2003.5shot```. Then you can benchmark the model with the script ```python eval_conll2003.py```, which will show you an F1 performance of around 80.
 
+For fine-tuning your own task, you need to create a Jsonlines file, each line contains {"words": [...], "ner": [...]}, For example:
+
+```json
+{"words": ["I", "am", "John", "Smith", ".", "Person", ":"], "ner": ["O", "O", "B", "I", "O", "O", "O"]}
+```
+
+<img src="https://github.com/user-attachments/assets/ef177466-d915-46d2-9201-5e672bb6ec23" style="width: 40%;" />
+
+which indicates "John Smith" to be predicted as the next tokens.
+
+You can refer to some prompts shown below for beginning:
+
+| **Type**            | **User Input**                                                                                      | **Assistant Response**                              |
+|---------------------|----------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| Entity              | **User:** [Context] Question: What is the [Label] mentioned?                                        | **Assistant:** Answer: The [Label] is             |
+| Relation (Kill)     | **User:** [Context] Question: Who does [Entity] kill?                                               | **Assistant:** Answer: [Entity] kills             |
+| Relation (Live)     | **User:** [Context] Question: Where does [Entity] live in?                                          | **Assistant:** Answer: [Entity] lives in         |
+| Relation (Work)     | **User:** [Context] Question: Who does [Entity] work for?                                           | **Assistant:** Answer: [Entity] works for         |
+| Relation (Located)  | **User:** [Context] Question: Where is [Entity] located in?                                         | **Assistant:** Answer: [Entity] is located in     |
+| Relation (Based)    | **User:** [Context] Question: Where is [Entity] based in?                                           | **Assistant:** Answer: [Entity] is based in       |
+| Relation (Adverse)  | **User:** [Context] Question: What is the adverse effect of [Entity]?                               | **Assistant:** Answer: The adverse effect of [Entity] is  |
+| Query               | **User:** [Context] Question: [Question]                                                           | **Assistant:** Answer:                            |
+| Instruction (Entity)| **User:** [Context] Question: What is the [Label] mentioned? ([Instruction])                        | **Assistant:** Answer: The [Label] is             |
+| Instruction (Query) | **User:** [Context] Question: [Question] ([Instruction])                                            | **Assistant:** Answer:                           |
+
 ## Fly your own Cuckoo 🪽
 
 We include the script to transform texts to NTE instances in the file ```nte_data_collection.py```, which takes C4 as an example, the converted results can be checked in ```cuckoo.c4.example.json```. The script is designed to be easily adapted to other resources like entity, query, and questions and you can modify your own data to NTE to fly your own Cuckoo! Run the ```run_cuckoo.sh``` script to try an example pre-training.
