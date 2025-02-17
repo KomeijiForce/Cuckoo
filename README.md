@@ -204,4 +204,4 @@ python run_ner.py \
   --overwrite_output_dir
 ```
 
-You will get an example Cuckoo model in ```models/cuckoo-c4-example```, it might not perform well if you pre-train with too little data.
+You will get an example Cuckoo model in ```models/cuckoo-c4-example```, it might not perform well if you pre-train with too little data. You may adjust the hyperparameters inside ```nte_data_collection.py``` or modify the conversion for your own resources to enable better pre-training performance.
