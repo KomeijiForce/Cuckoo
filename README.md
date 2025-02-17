@@ -182,6 +182,8 @@ You can refer to some prompts shown below for beginning:
 | Instruction (Entity)| **User:** [Context] Question: What is the [Label] mentioned? ([Instruction])                        | **Assistant:** Answer: The [Label] is             |
 | Instruction (Query) | **User:** [Context] Question: [Question] ([Instruction])                                            | **Assistant:** Answer:                           |
 
+After building your own downstream dataset, save it into ```my_downstream.json```, and then run the command ```bash run_downstream.sh my_downstream KomeijiForce/Cuckoo-C4-Rainbow```. You will find an adapted Cuckoo in ```models/cuckoo-my_downstream```.
+
 ## Fly your own Cuckoo 🪽
 
 We include the script to transform texts to NTE instances in the file ```nte_data_collection.py```, which takes C4 as an example, the converted results can be checked in ```cuckoo.c4.example.json```. The script is designed to be easily adapted to other resources like entity, query, and questions and you can modify your own data to NTE to fly your own Cuckoo! Run the ```run_cuckoo.sh``` script to try an example pre-training.
