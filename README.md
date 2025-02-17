@@ -157,6 +157,8 @@ which shows Cuckoo is not extracting any plausible spans but has the knowledge t
 
 Cuckoo 🐦 is an expert in few-shot adaptation to your own tasks, taking CoNLL2003 as an example, run ```bash run_downstream.sh conll2003.5shot KomeijiForce/Cuckoo-C4-Rainbow```, you will get a fine-tuned model in ```models/cuckoo-conll2003.5shot```. Then you can benchmark the model with the script ```python eval_conll2003.py```, which will show you an F1 performance of around 80.
 
+You can also train the adaptation to machine reading comprehension (SQuAD), run ```bash run_downstream.sh squad.32shot KomeijiForce/Cuckoo-C4-Rainbow```, you will get a fine-tuned model in ```models/cuckoo-squad.32shot```. Then you can benchmark the model with the script ```python eval_squad.py```, which will show you an F1 performance of around 88.
+
 For fine-tuning your own task, you need to create a Jsonlines file, each line contains {"words": [...], "ner": [...]}, For example:
 
 ```json
