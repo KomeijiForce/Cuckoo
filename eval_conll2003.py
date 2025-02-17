@@ -121,5 +121,5 @@ def test_ner(path, dataset_name):
         
     return f1
 
-device = torch.device("cuda:6")
+device = torch.device("cuda:0")
 test_ner("models/cuckoo-conll2003.5shot", "conll2003")
