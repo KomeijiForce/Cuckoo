@@ -21,7 +21,7 @@ Currently, we open-source checkpoints of Cuckoos that are pre-trained on:
 
 ## Performance Demonstration 🚀
 
-Begin your journey with Cuckoo to experience unimaginable adaption efficiency to all kinds of IE tasks!
+Begin your journey with Cuckoo to experience unimaginable adaptation efficiency for all kinds of IE tasks!
 
 |                      | CoNLL2003 | BioNLP2004 | MIT-Restaurant | MIT-Movie | Avg. | CoNLL2004 | ADE | Avg. | SQuAD | SQuAD-V2 | DROP | Avg. |
 |----------------------|-----------|-----------|----------------|-----------|------|-----------|-----|------|-------|----------|------|------|
@@ -152,6 +152,10 @@ fire ['red']
 night []
 ```
 which shows Cuckoo is not extracting any plausible spans but has the knowledge to understand the context.
+
+## Few-shot Adaptation 🎯
+
+Cuckoo 🐦 is an expert in few-shot adaptation to your own tasks, taking CoNLL2003 as an example, run ```bash run_downstream.sh conll2003.5shot KomeijiForce/Cuckoo-C4-Rainbow```, you will get a fine-tuned model in ```models/```
 
 ## Fly your own Cuckoo 🪽
 
