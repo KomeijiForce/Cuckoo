@@ -205,3 +205,25 @@ python run_ner.py \
 ```
 
 You will get an example Cuckoo model in ```models/cuckoo-c4-example```, it might not perform well if you pre-train with too little data. You may adjust the hyperparameters inside ```nte_data_collection.py``` or modify the conversion for your own resources to enable better pre-training performance.
+
+## 🐾 Citation
+
+```
+@article{DBLP:journals/corr/abs-2502-11275,
+  author       = {Letian Peng and
+                  Zilong Wang and
+                  Feng Yao and
+                  Jingbo Shang},
+  title        = {Cuckoo: An {IE} Free Rider Hatched by Massive Nutrition in {LLM}'s Nest},
+  journal      = {CoRR},
+  volume       = {abs/2502.11275},
+  year         = {2025},
+  url          = {https://doi.org/10.48550/arXiv.2502.11275},
+  doi          = {10.48550/arXiv.2502.11275},
+  eprinttype   = {arXiv},
+  eprint       = {2502.11275},
+  timestamp    = {Mon, 17 Feb 2025 19:32:20 +0000},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2502-11275.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+```
