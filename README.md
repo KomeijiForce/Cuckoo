@@ -97,7 +97,7 @@ Case 1: Basic entity and relation understanding
 text = "Tom and Jack went to their trip in Paris."
 
 for question in [
-    "What are the people mentioned here?",
+    "What is the person mentioned here?",
     "What is the city mentioned here?",
     "Who goes with Tom together?",
     "What do Tom and Jack go to Paris for?",
@@ -109,7 +109,7 @@ for question in [
 ```
 You will get things like,
 ```
-What are the people mentioned here? ['Tom', 'Jack']
+What is the person mentioned here? ['Tom', 'Jack']
 What is the city mentioned here? ['Paris']
 Who goes with Tom together? ['Jack']
 What do Tom and Jack go to Paris for? ['trip']
