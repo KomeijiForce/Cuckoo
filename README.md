@@ -1,5 +1,7 @@
 # Cuckoo 🐦
 
+Implementation for [Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest](https://arxiv.org/pdf/2502.11275)
+
 Cuckoo is a small (0.3B) information extraction (IE) model that imitates the next token prediction paradigm of large language models (LLMs). Instead of retrieving from the vocabulary, Cuckoo predicts the next tokens by tagging them in the given input context as shown below:
 
 ![cuckoo](https://github.com/user-attachments/assets/d000f275-82a7-4939-aca8-341c61a774dc)
