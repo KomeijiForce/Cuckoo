@@ -31,7 +31,7 @@ def next_tokens_extraction(text):
 
     inputs = tokenizer(text, return_tensors="pt").to(device)
     tag_predictions = tagger(**inputs).logits[0].argmax(-1)
-
+    
     predictions = [tokenizer.decode(inputs.input_ids[0, seq[0]:seq[1]]).strip() for seq in find_sequences(tag_predictions)]
     
     return predictions
@@ -43,14 +43,14 @@ print("Text:", text)
 print('-'*100)
 
 for question in [
-    "What are the people mentioned here?",
+    "What is the person mentioned here?",
     "What is the city mentioned here?",
-    "Who goes with Tom together?",
+    "Who goes with Tom together to Paris?",
     "What do Tom and Jack go to Paris for?",
-    "Which city does George live in?",
+    "Where does George live in?",
 ]:
-    text = f"User:\n\n{text}\n\nQuestion: {question}\n\nAssistant:"
-    predictions = next_tokens_extraction(text)
+    prompt = f"User:\n\n{text}\n\nQuestion: {question}\n\nAssistant:"
+    predictions = next_tokens_extraction(prompt)
     print(question, predictions)
     
 print('*'*100)
@@ -62,13 +62,13 @@ print("Passage:", passage)
 print('-'*100)
 
 for question in [
-    "What are the people mentioned here?",
+    "What is the person mentioned here?",
     "What is the job of Beethoven?",
     "How famous is Beethoven?",
     "When did Beethoven's middle period showed an individual development?",
 ]:
-    text = f"User:\n\n{passage}\n\nQuestion: {question}\n\nAssistant:"
-    predictions = next_tokens_extraction(text)
+    prompt = f"User:\n\n{passage}\n\nQuestion: {question}\n\nAssistant:"
+    predictions = next_tokens_extraction(prompt)
     print(question, predictions)
 
 print('*'*100)
@@ -80,6 +80,6 @@ print("Choices:", choices)
 print('-'*100)
 
 for obj in ["grass", "sea", "fire", "night"]:
-    text = f"User:\n\n{choices}\n\nQuestion: What is the color of the {obj}?\n\nAssistant:\n\nAnswer:"
-    predictions = next_tokens_extraction(text)
+    prompt = f"User:\n\n{choices}\n\nQuestion: What is the color of the {obj}?\n\nAssistant:\n\nAnswer:"
+    predictions = next_tokens_extraction(prompt)
     print(f"What is the color of the {obj}?", predictions)
