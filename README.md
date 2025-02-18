@@ -101,10 +101,10 @@ for question in [
     "What is the city mentioned here?",
     "Who goes with Tom together?",
     "What do Tom and Jack go to Paris for?",
-    "Which city does George live in?",
+    "Where does George live in?",
 ]:
-    text = f"User:\n\n{text}\n\nQuestion: {question}\n\nAssistant:"
-    predictions = next_tokens_extraction(text)
+    prompt = f"User:\n\n{text}\n\nQuestion: {question}\n\nAssistant:"
+    predictions = next_tokens_extraction(prompt)
     print(question, predictions)
 ```
 You will get things like,
@@ -113,7 +113,7 @@ What are the people mentioned here? ['Tom', 'Jack']
 What is the city mentioned here? ['Paris']
 Who goes with Tom together? ['Jack']
 What do Tom and Jack go to Paris for? ['trip']
-Which city does George live in? []
+Where does George live in? []
 ```
 where [] indicates Cuckoo thinks there to be no next tokens for extraction.
 
