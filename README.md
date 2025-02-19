@@ -38,7 +38,12 @@ Begin your journey with Cuckoo to experience unimaginable adaptation efficiency 
 | └─ Only Post-train   | 72.80     | 56.10     | 66.02          | 67.10     | 65.51 | 68.66     | 69.75 | 69.21 | 77.05 | 62.39    | 54.80 | 64.75 |
 | Rainbow Cuckoo 🌈🐦🛠️  | 79.94     | 58.39     | 70.30          | 67.00     | **68.91** | 70.47     | 76.05 | **73.26** | 86.57 | 69.41    | 64.64 | **73.54** |
 
-*(Super Rainbow Cuckoo 🦸🌈🐦🛠️ is not included in the benchmark because it uses training sets to boost its performance)*
+*(Super Rainbow Cuckoo 🦸🌈🐦🛠️  uses training sets except CoNLL2004 and ADE to boost its performance)*
+
+|                      | CoNLL2003 | BioNLP2004 | MIT-Restaurant | MIT-Movie | Avg.  | CoNLL2004 | ADE   | Avg.  | SQuAD | SQuAD-V2 | DROP  | Avg.  |
+|----------------------|-----------|-----------|----------------|-----------|-------|-----------|-------|-------|-------|----------|-------|-------|
+| Super Rainbow Cuckoo 🦸🌈🐦🛠️           | 88.38     | 68.33     | 76.79          | 69.39     | **75.22** | 72.96     | 80.06  | **76.51** | 89.54 | 74.52    | 74.89  | **79.65** |
+
 
 ## Quick Experience with Cuckoo in Next Tokens Extraction ⚡
 
