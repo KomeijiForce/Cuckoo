@@ -21,6 +21,10 @@ Currently, we open-source checkpoints of Cuckoos that are pre-trained on:
 
 4) Cuckoo-C4-Rainbow + Multiple NER Datasets, WizardLM Dataset, Multiple Choice QA Datasets, MMLU, SQuAD, DROP, MNLI, SNLI. ([Cuckoo-C4-Super-Rainbow](https://huggingface.co/KomeijiForce/Cuckoo-C4-Super-Rainbow) 🦸🌈🐦🛠️)
 
+We also open-source the resources 📖 for Cuckoo pre-training
+
+・[[C4 (1M Split)]](https://huggingface.co/datasets/KomeijiForce/Cuckoo_C4_1M) ・[[TuluV3]](https://huggingface.co/datasets/KomeijiForce/Cuckoo_Instruct_TuluV3) ・[[Rainbow Cuckoo]](https://huggingface.co/datasets/KomeijiForce/Cuckoo_C4_Rainbow) ・[[Super Rainbow Cuckoo]](https://huggingface.co/datasets/KomeijiForce/Cuckoo_C4_Super_Rainbow)
+
 ## Performance Demonstration 🚀
 
 Begin your journey with Cuckoo to experience unimaginable adaptation efficiency for all kinds of IE tasks!
