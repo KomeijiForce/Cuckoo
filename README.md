@@ -1,6 +1,6 @@
 # Cuckoo 🐦
 
-[Update] We are building a high-quality dataset that multiple spans are the target for next token extraction.
+[Update] We are building a high-quality [dataset](https://huggingface.co/datasets/KomeijiForce/Cuckoo_MetaIE_MultiNTE_Fineweb) that multiple spans are the target for next token extraction.
 
 Implementation for [Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest](https://arxiv.org/pdf/2502.11275)
 
