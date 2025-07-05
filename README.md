@@ -50,7 +50,7 @@ Begin your journey with Cuckoo to experience unimaginable adaptation efficiency 
 
 |                      | CoNLL2003 | BioNLP2004 | MIT-Restaurant | MIT-Movie | Avg.  | CoNLL2004 | ADE   | Avg.  | SQuAD | SQuAD-V2 | DROP  | Avg.  |
 |----------------------|-----------|-----------|----------------|-----------|-------|-----------|-------|-------|-------|----------|-------|-------|
-| DeBERTaV3 Cuckoo (Only Pre-train)  | 79.32 | 62.09  | 66.96    | 68.01    | 69.10 | 75.12     | 64.31  | 69.72 | 80.23 | 75.85    | 57.33  | 71.14 |
+| DeBERTaV3 Cuckoo (Only Pre-train)  | 79.77 | 61.83 | 67.14 | 68.17 | 69.23 | 67.06 | 75.77 | 71.41 | 79.38 | 76.44 | 59.89 | 71.90 |
 
 *(Super Rainbow Cuckoo 🦸🌈🐦🛠️  uses training sets except CoNLL2004 and ADE to boost its performance)*
 
